@@ -1,6 +1,6 @@
 {
     "name": "@peterroe/create-js-lib",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "create-js-lib",
     "main": "index.js",
     "repository": "git@github.com:UngeUI/create-js-lib.git",
