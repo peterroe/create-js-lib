@@ -1,6 +1,6 @@
 <template>
     <div>
-        {{Add(1 + 3)}}
+        {{Add(1, 3)}}
     </div>
 </template>
 

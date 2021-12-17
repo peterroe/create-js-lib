@@ -2,6 +2,11 @@
     "name": "<%=name %>",
     "version": "1.0.0",
     "description": "<%=name %>",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "serve": "vite preview"
+    },
     "keywords": [
         "js",
         "lib",

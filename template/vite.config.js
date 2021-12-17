@@ -11,7 +11,7 @@ export default defineConfig({
         },
         rollupOptions: {
             plugins: [
-                tenser()
+                terser()
             ]
         }
     }
