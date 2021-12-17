@@ -12,7 +12,14 @@
         "lib",
         "<%=name %>"
     ],
-    "main": "index.js",
+    "main": "./dist/<%=name %>.umd.js",
+    "module": "./dist/<%=name %>.es.js",
+    "exports": {
+        ".": {
+            "import": "./dist/<%=name %>.es.js",
+            "require": "./dist/<%=name %>.umd.js"
+        }
+    },
     "repository": "",
     "author": "",
     "license": "MIT",
