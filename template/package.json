@@ -1,0 +1,15 @@
+{
+    "name": "pkg",
+    "version": "1.0.0",
+    "description": "pkg",
+    "main": "index.js",
+    "repository": "",
+    "author": "",
+    "license": "MIT",
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^2.0.1",
+        "rollup-plugin-terser": "^7.0.2",
+        "vite": "^2.7.3",
+        "vue": "^3.2.26"
+    }
+}
