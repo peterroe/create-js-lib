@@ -1,7 +1,12 @@
 {
-    "name": "pkg",
+    "name": "<%=name %>",
     "version": "1.0.0",
-    "description": "pkg",
+    "description": "<%=name %>",
+    "keywords": [
+        "js",
+        "lib",
+        "<%=name %>"
+    ],
     "main": "index.js",
     "repository": "",
     "author": "",

@@ -7,7 +7,7 @@ export default defineConfig({
         lib: {
             entry: './lib/index.js',
             formats: ['es', 'umd'],
-            name: 'pkg'
+            name: '<%=name %>'
         },
         rollupOptions: {
             plugins: [

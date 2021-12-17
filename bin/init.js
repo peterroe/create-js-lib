@@ -23,13 +23,17 @@ inquirer.prompt([{
     message: 'Do you want test the lib in Vue?',
     default: true
 }]).then(answer => {
-    console.log(process.cwd(), __dirname)
-    fs.mkdir(answer.name, () => {})
-    fse.copy(templateURL, path.join(process.cwd(), answer.name))
-    return
 
-    createFiles(templateURL)
-
+    const packageURL = path.join(process.cwd(), answer.name)
+    fse.copySync(templateURL, packageURL)
+    fs.readdir(packageURL, 'utf8', (err, files) => {
+        console.log(files)
+        files.forEach(file => {
+            ejs.renderFile(path.join(packageURL, file), answer).then(value => {
+                fs.writeFile(path.join(packageURL, file), value, () => {})
+            }).catch(err => {})
+        })
+    })
 
     function createFiles(dirName) {
         fs.readdir(dirName, (err, files) => {
