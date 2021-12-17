@@ -31,15 +31,4 @@ $ yarn dev
 $ yarn build
 ```
 
-## UMD/ESM
-
-pkg是包的名字：
-
-```html
-<script src="https://unpkg.com/[pkg]"></script>
-```
-```shell
-$ yarn add [pkg]
-``
-
 
